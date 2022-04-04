@@ -1,0 +1,182 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.home-container{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    color: #6ca7ff;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: .5fr 1fr 1fr 1fr;
+}
+
+.title{
+    text-align: center;
+    grid-column: 3/4;
+}
+
+.tools{
+    grid-row: 2/3;
+    grid-column: 1/6;
+    text-align: center;
+}
+
+.tool-brand{
+    width: 20%;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    height: 150px;
+    cursor: pointer;
+    margin-left: 10px;
+    box-shadow: 3px 3px 5px #cacaca;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.brand{
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+    margin-right: 150px;
+    font-size: 2em;
+}
+
+.tool-brand:hover{
+    box-shadow: 2px 1px 5px #6ca7ff;
+    color: #6ca7ff;
+    background-color: white;
+}
+
+.tool-brand:hover .brand{
+    color: #6ca7ff;
+}
+
+.LADW{
+    background-image:  url('images/ladder.png');
+    box-shadow: inset 0 0 0 1000px rgba(108, 167, 255, 0.521);
+}
+
+.JAKD{
+    background-image:  url('images/jackhammer.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(255, 108, 108, 0.521);
+}
+
+.JAKR{
+    background-image:  url('images/jackhammer.png');
+    box-shadow: inset 0 0 0 1000px rgba(108, 255, 211, 0.521);
+}
+
+.CHNS{
+    background-image:  url('images/chainsaw.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(213, 108, 255, 0.521);
+}
+
+.form{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100% ;
+    grid-row: 3/4;
+    grid-column: 1/6;
+}
+
+.input-container{
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.input-field{
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 90%;
+    height: 30px;
+    font-size: 1em;
+    color: #606060;
+    padding-left: 5px;
+    z-index: 1;
+    background: none;
+    background: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    outline: 0;
+    &:valid + label{
+        color: #6ca7ff;
+      padding: 1px 6px;
+      z-index: 0;
+      font-size: .9em;
+      text-transform: uppercase;
+      margin-top: -15px;
+    }
+    &:focus{
+        outline: none !important;
+        border-bottom: 2px solid #6ca7ff;
+    } &:focus + label{
+      color: #6ca7ff;
+      padding: 1px 6px;
+      z-index: 2;
+      font-size: .9em;
+      text-transform: uppercase;
+      margin-top: -15px;
+    }
+}
+
+.btn{
+    width: 150px;
+    border: none;
+}
+
+.submitBtn{
+    background-color: aquamarine;
+    color: white;
+    height: 50px;
+    box-shadow: 3px 3px 5px #cacaca;
+    grid-row: 4/5;
+    grid-column: 5/6;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/* .input-label{
+    transition:
+      background 0.2s,
+      color 0.2s,
+      top 0.2s,
+      bottom 0.2s,
+      right 0.2s,
+      left 0.2s;
+    position: absolute;
+    color: #999;
+    padding: 7px 6px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+} */
+
+.agreement-module{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 300px;
+    box-shadow: 3px 3px 5px #cacaca;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: white;
+    z-index: 2;
+}
+
+.agreement-data{
+    display:block;
+}
