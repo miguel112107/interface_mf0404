@@ -14,7 +14,7 @@ SpringBoot v2.6.5
 To build and run this project, use the following commands on console to create react application:
     ./mvnw package ## Build Spring Application with dependencies
     npm install ## React project with dependencies
-    ./mvnw spring-boot:Run ## run built spring boot application. Allows front end interaction and api access 
+    ./mvnw spring-boot:run ## run built spring boot application. Allows front end interaction and api access 
     npm run watch ## Runs React front end for local access for client. 
 
 Package.json file is preconfigured with all required dependencies.
